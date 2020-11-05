@@ -1,0 +1,48 @@
+.color {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+  /* flex-basis: calc(25% - 2px - 0.5em); */
+  margin: 0.25em;
+  border: 1px solid #ededed;
+}
+
+@media screen and (max-width: 1200px) {
+  .color {
+    /* flex-basis: calc(33.3334% - 2px - 0.5em); */
+  }
+}
+@media screen and (max-width: 800px) {
+  .color {
+    /* flex-basis: calc(50% - 2px - 0.5em); */
+  }
+}
+@media screen and (max-width: 500px) {
+  .color {
+    /* flex-basis: calc(100% - 2px - 0.5em); */
+  }
+}
+
+.color h1 {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.color .color-header {
+  position: relative;
+  display: flex;
+}
+
+.color .color-main {
+  position: relative;
+  height: 50px;
+}
+
+button.color-delete {
+  position: absolute;
+  right: 0.25em;
+  top: 0.25em;
+  color: #c00;
+}
