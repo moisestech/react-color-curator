@@ -1,0 +1,56 @@
+{
+  "name": "react-color-curator",
+  "version": "1.0.0",
+  "description": "ReactJS Color Curator App",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "NOVE_ENV='production' webpack"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/syntax-dynamic-import"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moisestech/react-color-curator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moisestech/react-color-curator/issues"
+  },
+  "homepage": "https://github.com/moisestech/react-color-curator#readme",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.3.0",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "@babel/plugin-transform-react-jsx": "^7.12.5"
+  }
+}
